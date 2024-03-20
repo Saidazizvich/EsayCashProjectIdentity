@@ -1,0 +1,28 @@
+﻿@model ConfirmMailViewModel
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+
+<h2>Index</h2>
+<div class="container">
+    <br />
+    <br />
+    <form method="post">
+        <label>Mail adresinesiza gorundu</label>
+        <input type="text" class="form-control" value="@ViewBag.v" />
+        <br />
+        <label>Mail adresinesa 6 haneleni sayini giriniz </label>
+        <input type="text" class="form-control" asp-for="ConfirmCode"/>
+        <br />
+        <button class="btn btn-primary">Heasb Aktiv
+
+        </button>
+    </form>
+
+</div>
